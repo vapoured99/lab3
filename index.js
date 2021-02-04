@@ -9,12 +9,15 @@ http.createServer(function (request, response) {
 
     //send the response body as "Hello World"
     response.end('Hello World\n');
-}).listen(3000);
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log('Our app is running on port ${ PORT }');
-});
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => {
+        console.log('Our app is running on port ${ PORT }');
+    });
+    
+
+
+}).listen(3000);
 
 
 //console will print the message
