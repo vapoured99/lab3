@@ -1,5 +1,10 @@
 var http = require("http");
 
+const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => {
+        console.log('Our app is running on port ${ PORT }');
+    });
+
 
 http.createServer(function (request, response) {
     //send the http header
@@ -10,10 +15,7 @@ http.createServer(function (request, response) {
     //send the response body as "Hello World"
     response.end('Hello World\n');
 
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-        console.log('Our app is running on port ${ PORT }');
-    });
+    
     
 
 
