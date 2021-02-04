@@ -18,7 +18,7 @@ app.route('/login')
 
 // send our index.html file to the user for the home page
 app.get('/', function(req, res) {
-     res.sendFile(__dirname + '/myWebPage.html');
+     res.sendFile(__dirname + '/index.html');
 });
 
 ///////////////////////////////////////////////////////////////////
