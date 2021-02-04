@@ -12,9 +12,9 @@ http.createServer(function (request, response) {
         {'Content-Type': 'text/html',
          'Access-Control-Allow-Origin' : '*'});
 
-    var readStream = fs.createReadStream(__dirname + '/index.html');
+    var readstream = fs.createReadStream(__dirname + '/index.html');
     //send a message
-    readStream.pipe(respone);
+    readstream.pipe(response);
 
 }).listen(PORT);
 
