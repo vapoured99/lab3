@@ -12,7 +12,7 @@ http.createServer(function (request, response) {
 }).listen(3000);
 
 const PORT = process.env.PORT || 3000;
-applicationCache.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log('Our app is running on port ${ PORT }');
 });
 
