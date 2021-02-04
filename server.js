@@ -8,6 +8,10 @@ var port = PORT;
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
    });
+   // start the server
+   app.listen(PORT);
+   console.log('Express Server running at http://127.0.0.1:'.PORT);
+
 
 // create routes for the admin section
 //get an instance of the router
@@ -23,7 +27,3 @@ adminRouter.get('/posts', function(req, res) {
  res.send('I show all the posts!'); });
 // apply the routes to our application
 app.use('/admin', adminRouter); 
-
-   // start the server
-   app.listen(PORT);
-   console.log('Express Server running at http://127.0.0.1:'.PORT);
