@@ -1,0 +1,29 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "creating package json file",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "no test command",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vapoured99/lab3.git"
+  },
+  "keywords": [
+    "package"
+  ],
+  "author": "dylan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vapoured99/lab3/issues"
+  },
+  "homepage": "https://github.com/vapoured99/lab3#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
