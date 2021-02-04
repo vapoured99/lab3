@@ -2,13 +2,13 @@
   "name": "package",
   "version": "1.0.0",
   "description": "creating package json file",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "no test command",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
