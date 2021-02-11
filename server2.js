@@ -41,7 +41,7 @@ app.route('/login')
             if(err) throw err;
             //Write databse Insert/Update/Query code here..
             console.log('Start the database stuff');
-            var dbo = db.db("mydb");
+            var dbo = db.db("MYDB");
             var myobj = { firstInput: input1, secondInput: input2 };
             dbo.collection("users").insertOne(myobj, function(err, res) {
               if (err) throw err;
